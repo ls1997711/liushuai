@@ -1,0 +1,36 @@
+@import './public';
+#header{
+    @include size(100%,36px,0);
+    background: #f8f8f8;
+    .header{
+        margin: 0 auto;
+        @include size(1190px,36px,0);
+        @include font(12px,36px,0);
+        background:pink;
+        .hello{
+            float: left;
+            a{
+                color: red;
+            }
+        }
+        .right{
+            float: right;
+            a{
+                @include font(12px,36px,#5e5e5e);
+            }
+             & a:nth-child(4){
+                color: red;
+                background:url(../img/dh.gif) no-repeat;
+                padding-left: 20px;
+            }
+            & a:nth-child(5){
+                background: url(../img/phone.png) no-repeat;
+                padding-left: 16px;
+            }
+            & a:nth-child(6){
+                background: url(../img/sc.png) no-repeat;
+                padding-left: 26px;
+            }
+        }
+    }
+}

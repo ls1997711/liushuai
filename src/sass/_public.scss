@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* 重置样式 */
+html,body, ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,xt,legend,img,input{
+    margin: 0;
+    padding: 0;
+}
+/* 字体设置 */
+body{
+    font-size: 16px;
+    font-family: "微软雅黑";
+}
+/* 标题设置 */
+h1,h2,h3,h4,h5,h6{
+    font-size: 16px;
+    font-weight: normal;
+}
+/* 列表清除样式 */
+ul,ol,li{
+    list-style: none;
+}
+/* 清除倾斜样式 */
+em,i{
+    font-style:normal ;
+}
+/* 清除下划线 */
+a,u{
+    text-decoration: none;
+}
+/* 清除加粗 */
+b,strong{
+    font-weight: normal;
+}
+/* fieldset分组标签 */
+img,fieldset{
+    border: none;
+}
+/* 清除图片间距  转化块*/
+img{
+    display: block;
+}
+/* 表单聚焦蓝色清除 */
+input{
+    outline: none;
+}
+/* 表单评论禁止用户拖拽大小 */
+textarea{
+    resize: none;
+}
+// 声明混合器
+// 宽高 浮动
+@mixin size ($width,$height,$float){
+    width: $width;
+    height: $height;
+    float: $float;
+}
+// 定位
+@mixin position ($position,$top,$left){
+    position : $position;
+    top: $top;
+    left: $left;
+}
+// 字体大小行高颜色
+@mixin font ($font-size,$line-height,$color){
+    font-size : $font-size;
+    line-height : $line-height;
+    color : $color;
+}
+
+
